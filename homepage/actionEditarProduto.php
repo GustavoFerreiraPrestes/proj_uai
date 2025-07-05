@@ -7,7 +7,7 @@
     //Verifica o método de requisição do servidor
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         //Bloco para declaração de variáveis
-        $fotoProduto = $nomeProduto = $descricadoProduto = $valorProduto =$estoque = "";
+        $fotoProduto = $nomeProduto = $descricadoProduto = $valorProduto = $estoque = "";
         $erroPreenchimento = false;
 
         //Validação do campo nomeProduto
@@ -56,7 +56,7 @@
         //Utiliza a função empty para verificar se o campo está vazio
         if(empty($_POST["estoque"])){
             echo "<div class='alert alert-warning text-center'>
-                    O campo <strong>VALOR</strong> é obrigatório!
+                    O campo <strong>ESTOQUE</strong> é obrigatório!
                 </div>
             ";
             $erroPreenchimento = true;
@@ -114,8 +114,8 @@
         if(!$erroPreenchimento && !$erroUpload){
 
             //Criar uma QUERY responsável por realizar a inserção dos dados no BD
-            $inserirProduto= "INSERT INTO Produtos (fotoProduto, nomeProduto, descricaoProduto, valorProduto, estoque)
-                                VALUES ('$fotoProduto', '$nomeProduto', '$descricaoProduto', $valorProduto, '$estoque') ";
+            $inserirProduto= "UPDATE Produtos SET fotoProduto = $fotoProduto, nomeProduto = $nomeProduto, descricaoProduto = $descricaoProduto, valorProduto = $valorProduto, estoque = $estoque
+                              WHERE idProduto = $idProduto";
 
             //Inclui o arquivo de conexão com o BD
             include "conexaoBD.php";
@@ -142,6 +142,10 @@
                                 <tr>
                                     <th>VALOR</th>
                                     <td>$valorProduto</td>
+                                </tr>
+                                <tr>
+                                    <th>VALOR</th>
+                                    <td>$estoque</td>
                                 </tr>
                             </table>
                         </div>

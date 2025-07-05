@@ -103,7 +103,7 @@
                             //Verifica se o tipo do usuário é 'administrador'
                             if($tipoUsuario == 'administrador'){
                                 echo "
-                                    <li class='nav-item'><a class='nav-link active text-light' aria-current='page' href='formProduto.php'>Cadastrar Produto</a></li>
+                                    <li class='cadastroproduto nav-item'><a class='nav-link active text-light' aria-current='page' href='formProduto.php'>Cadastrar Produto</a></li>
                                 ";
                             }
                             //Verifica se o tipo do usuário é 'cliente'

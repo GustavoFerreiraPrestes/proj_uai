@@ -1,7 +1,22 @@
-       <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
-        </footer>
+    <!-- Footer--> 
+       <div class= "py-1">
+            <footer class="bg-light text-center py-3 mt-auto">
+            <p class="mb-0">
+
+            <!-- WHATSAPP -->
+            <a href="https://wa.me/5542988862223" target="_blank" class="text-success me-3 text-decoration-none">
+              <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+
+            <!-- INSTAGRAM -->
+            <a href="https://instagram.com/cookiesuai" target="_blank" class="text-danger text-decoration-none">
+              <i class="bi bi-instagram"></i> Instagram
+            </a>
+
+            </p>
+            </footer>
+        </div>
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

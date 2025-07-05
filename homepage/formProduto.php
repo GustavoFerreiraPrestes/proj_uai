@@ -22,7 +22,7 @@
                     </div>
                     <div class="form-floating mb-3 mt-3">
                         <textarea class="form-control" id="descricaoProduto" placeholder="Informe uma breve descrição sobre o Produto" name="descricaoProduto" required></textarea>
-                        <label for="nomeProduto">Descrição do Produto</label>
+                        <label for="descricaoProduto">Descrição do Produto</label>
                         <div class="valid-feedback"></div>
                         <div class="invalid-feedback"></div>
                     </div>
@@ -32,6 +32,13 @@
                         <div class="valid-feedback"></div>
                         <div class="invalid-feedback"></div>
                     </div>
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control" id="estoque" placeholder="Nome" name="estoque" required>
+                        <label for="estoque">Estoque:</label>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback"></div>
+                    </div>
+
                     <button type="submit" class="btn btn-success">Cadastrar Produto</button>
                 </form>
             </div>
@@ -41,4 +48,28 @@
 
 </div>
 
-<?php include "footer.php" ?>
+    <!-- Footer--> 
+       <div style=" position: fixed;  bottom: 0; left: 0; width: 100%;" class= "py-5 bg-dark">
+            <footer class="bg-light text-center py-3 mt-auto">
+            <p class="mb-0">
+
+            <!-- WHATSAPP -->
+            <a href="https://wa.me/5542988862223" target="_blank" class="text-success me-3 text-decoration-none">
+              <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+
+            <!-- INSTAGRAM -->
+            <a href="https://instagram.com/cookiesuai" target="_blank" class="text-danger text-decoration-none">
+              <i class="bi bi-instagram"></i> Instagram
+            </a>
+
+            </p>
+            </footer>
+        </div>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
