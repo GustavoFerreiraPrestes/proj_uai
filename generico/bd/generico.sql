@@ -28,12 +28,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `compras` (
-  `idCompra` int NOT NULL,
-  `idUsuario` int DEFAULT NULL,
-  `idProduto` int DEFAULT NULL,
-  `dataCompra` date DEFAULT NULL,
-  `horaCompra` time DEFAULT NULL,
-  `valorCompra` decimal(10,2) DEFAULT NULL
+`idCompra` int NOT NULL,
+`idUsuario` int DEFAULT NULL,
+`idProduto` int DEFAULT NULL,
+`dataCompra` date DEFAULT NULL,
+`horaCompra` time DEFAULT NULL,
+`valorCompra` decimal(10,2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
