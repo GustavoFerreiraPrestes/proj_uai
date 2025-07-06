@@ -34,7 +34,7 @@
                                 echo "Esgotado";
                             }
                             else{
-                                echo "$estoque";
+                                echo $estoque;
                             }
                             
                     ?>
@@ -122,6 +122,11 @@
             <!-- INSTAGRAM -->
             <a href="https://instagram.com/cookiesuai" target="_blank" class="text-danger text-decoration-none">
               <i class="bi bi-instagram"></i> Instagram
+            </a>
+
+            <!-- EMAIL -->
+            <a href="cookiesuai@gmail.com" class="text-dark text-decoration-none px-3">
+              <i class="bi bi-envelope-fill"></i> E-mail
             </a>
 
             </p>

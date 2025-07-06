@@ -22,6 +22,7 @@
                     $nomeProduto      = $registro['nomeProduto'];
                     $descricaoProduto = $registro['descricaoProduto'];
                     $valorProduto     = $registro['valorProduto'];
+                    $estoque          = $registro['estoque'];
                 }
             }
             else{
@@ -47,6 +48,7 @@
                         <img src="<?php echo $fotoProduto ?>" style="width: 100px;" title="Foto atual de <?php echo $nomeProduto ?>"> <!-- Exibe a foto atual cadastrada -->
                         <input type="hidden" id="fotoAtual" name="fotoAtual" value="<?php echo $fotoProduto ?>" required> <!-- Passa o local da FOTO ATUAL como parâmetro oculto com um NAME diferente -->
                         <input type="file" class="btn btn-link" name="fotoProduto"> <!-- Oferece a opção para alterar foto -->
+                        <label for="fotoProduto"></label>
                     </div>
                     <div class="form-floating mb-3 mt-3">
                         <input type="text" class="form-control" id="nomeProduto" placeholder="Nome" name="nomeProduto" value="<?php echo $nomeProduto ?>"required>
@@ -74,6 +76,12 @@
                     </div>
                     <button type="submit" class="btn btn-success">Salvar Alterações</button>
                 </form>
+
+                <form method='POST' action="removerProduto.php">
+                <input type='hidden' name='idProduto' value='<?php echo $idProduto; ?>'>
+                    <button type="submit" class="btn btn-alert">Remover Item</button>
+                </form>
+
             </div>
         </div>
     </div>
@@ -82,7 +90,7 @@
 </div>
 
     <!-- Footer--> 
-       <div style=" position: fixed;  bottom: 0; left: 0; width: 100%;" class= "py-5 bg-dark">
+       <div style=" position: fixed;  bottom: 0; left: 0; width: 100%;" class= "py-1">
             <footer class="bg-light text-center py-3 mt-auto">
             <p class="mb-0">
 
@@ -94,6 +102,11 @@
             <!-- INSTAGRAM -->
             <a href="https://instagram.com/cookiesuai" target="_blank" class="text-danger text-decoration-none">
               <i class="bi bi-instagram"></i> Instagram
+            </a>
+
+            <!-- EMAIL -->
+            <a href="cookiesuai@gmail.com" class="text-dark text-decoration-none px-3">
+              <i class="bi bi-envelope-fill"></i> E-mail
             </a>
 
             </p>

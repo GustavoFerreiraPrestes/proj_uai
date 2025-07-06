@@ -29,8 +29,7 @@
 
                                     <div class='col mb-5'>
                                         <div class='card h-100'>
-                                            <!--Opção pra colocar uma tag de oferta, acabei nao usando mas achei interessante, aí queria deixar aqui caso necessario
-                                            <div class='badge bg-dark text-white position-absolute' style='top: 0.5rem; right: 0.5rem'>Oferta   </div>-->
+                                            <div class='badge bg-dark text-white position-absolute' style='top: 0.5rem; right: 0.5rem'>Novidade   </div>
                                         <!--Imagem do Produto-->
                                             <!--Imagem do Produto-->
                                             <img class='card-img-top' src='img/tradicional.jpg' alt='...' />
@@ -63,8 +62,8 @@
 
                                     <div class='col mb-5'>
                                         <div class='card h-100'>
-                                            <!--Opção pra colocar uma tag de oferta, acabei nao usando mas achei interessante, aí queria deixar aqui caso necessario
-                                            <div class='badge bg-dark text-white position-absolute' style='top: 0.5rem; right: 0.5rem'>Oferta   </div>-->
+
+                                            <div class='badge bg-dark text-white position-absolute' style='top: 0.5rem; right: 0.5rem'>Novidade   </div>
                                         <!--Imagem do Produto-->
                                             <!--Imagem do Produto-->
                                             <img class='card-img-top' src='img/chocolate.jpg' alt='...' />
@@ -97,8 +96,7 @@
                                     
                                     <div class='col mb-5'>
                                         <div class='card h-100'>
-                                            <!--Opção pra colocar uma tag de oferta, acabei nao usando mas achei interessante, aí queria deixar aqui caso necessario
-                                            <div class='badge bg-dark text-white position-absolute' style='top: 0.5rem; right: 0.5rem'>Oferta   </div>-->
+                                            <div class='badge bg-dark text-white position-absolute' style='top: 0.5rem; right: 0.5rem'>Novidade   </div>
                                         <!--Imagem do Produto-->
                                             <!--Imagem do Produto-->
                                             <img class='card-img-top' src='img/redvelvet.jpg' alt='...' />
@@ -124,15 +122,14 @@
                                             </div>
                                             <!--Ação do Produto-->
                                             <div class='card-footer p-4 pt-0 border-top-0 bg-transparent'>
-                                                <div class='text-center'><a class='btn btn-outline-dark mt-auto' href='#'>Ver mais</a></div>
+                                                <div class='text-center'><a class='btn btn-outline-dark mt-auto' href='produto.php?idProduto=8'>Ver mais</a></div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class='col mb-5'>
                                         <div class='card h-100'>
-                                            <!--Opção pra colocar uma tag de oferta, acabei nao usando mas achei interessante, aí queria deixar aqui caso necessario
-                                            <div class='badge bg-dark text-white position-absolute' style='top: 0.5rem; right: 0.5rem'>Oferta   </div>-->
+                                            <div class='badge bg-dark text-white position-absolute' style='top: 0.5rem; right: 0.5rem'>Novidade   </div>
                                         <!--Imagem do Produto-->
                                             <!--Imagem do Produto-->
                                             <img class='card-img-top' src='img/kitkat.jpg' alt='...' />
@@ -158,23 +155,55 @@
                                             </div>
                                             <!--Ação do Produto-->
                                             <div class='card-footer p-4 pt-0 border-top-0 bg-transparent'>
-                                                <div class='text-center'><a class='btn btn-outline-dark mt-auto' href='#'>Ver mais</a></div>
+                                                <div class='text-center'><a class='btn btn-outline-dark mt-auto' href='produto.php?idProduto=9'>Ver mais</a></div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class='col mb-5'>
                                         <div class='card h-100'>
-                                            <!--Opção pra colocar uma tag de oferta, acabei nao usando mas achei interessante, aí queria deixar aqui caso necessario
-                                            <div class='badge bg-dark text-white position-absolute' style='top: 0.5rem; right: 0.5rem'>Oferta   </div>-->
+                                            <div class='badge bg-dark text-white position-absolute' style='top: 0.5rem; right: 0.5rem'>Novidade   </div>
                                         <!--Imagem do Produto-->
                                             <!--Imagem do Produto-->
-                                            <img class='card-img-top' src='img/bmaracuja.jpg' alt='...' />
+                                            <img class='card-img-top' src='img/nutella.jpg' alt='...' />
                                             <!--Detalhe do Produto-->
                                             <div class='card-body p-4'>
                                                 <div class='text-center'>
                                                     <!--Nome do Produto-->
-                                                    <h5 class='fw-bolder'>Brownie de Maracujá</h5>
+                                                    <h5 class='fw-bolder'>Cookie de Chocolate c/ Nutella</h5>
+
+                                                    <!--Avaliação do Produto
+                                                    <div class='d-flex justify-content-center small text-warning mb-2'>
+                                                        <div class='bi-star-fill'></div>
+                                                        <div class='bi-star-fill'></div>
+                                                        <div class='bi-star-fill'></div>
+                                                        <div class='bi-star-fill'></div>
+                                                        <div class='bi-star-fill'></div>
+                                                    </div>-->
+
+                                                    <!--Preço do Produto-->
+                                                    <!--usado pra traçar para desconto<span class='text-muted text-decoration-line-through'>$20.00</span>-->
+                                                    R$13,00
+                                                </div>
+                                            </div>
+                                            <!--Ação do Produto-->
+                                            <div class='card-footer p-4 pt-0 border-top-0 bg-transparent'>
+                                                <div class='text-center'><a class='btn btn-outline-dark mt-auto' href='produto.php?idProduto=13'>Ver mais</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class='col mb-5'>
+                                        <div class='card h-100'>
+                                            <div class='badge bg-dark text-white position-absolute' style='top: 0.5rem; right: 0.5rem'>Novidade   </div>
+                                        <!--Imagem do Produto-->
+                                            <!--Imagem do Produto-->
+                                            <img class='card-img-top' src='img/mm.jpg' alt='...' />
+                                            <!--Detalhe do Produto-->
+                                            <div class='card-body p-4'>
+                                                <div class='text-center'>
+                                                    <!--Nome do Produto-->
+                                                    <h5 class='fw-bolder'>Cookie de M&Ms</h5>
 
                                                     <!--Avaliação do Produto
                                                     <div class='d-flex justify-content-center small text-warning mb-2'>
@@ -192,23 +221,22 @@
                                             </div>
                                             <!--Ação do Produto-->
                                             <div class='card-footer p-4 pt-0 border-top-0 bg-transparent'>
-                                                <div class='text-center'><a class='btn btn-outline-dark mt-auto' href='#'>Ver mais</a></div>
+                                                <div class='text-center'><a class='btn btn-outline-dark mt-auto' href='produto.php?idProduto=14'>Ver mais</a></div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class='col mb-5'>
                                         <div class='card h-100'>
-                                            <!--Opção pra colocar uma tag de oferta, acabei nao usando mas achei interessante, aí queria deixar aqui caso necessario
-                                            <div class='badge bg-dark text-white position-absolute' style='top: 0.5rem; right: 0.5rem'>Oferta   </div>-->
+                                            <div class='badge bg-dark text-white position-absolute' style='top: 0.5rem; right: 0.5rem'>Novidade   </div>
                                         <!--Imagem do Produto-->
                                             <!--Imagem do Produto-->
-                                            <img class='card-img-top' src='img/bninho.jpg' alt='...' />
+                                            <img class='card-img-top' src='img/amendoim.jpg' alt='...' />
                                             <!--Detalhe do Produto-->
                                             <div class='card-body p-4'>
                                                 <div class='text-center'>
                                                     <!--Nome do Produto-->
-                                                    <h5 class='fw-bolder'>Brownie de Ninho</h5>
+                                                    <h5 class='fw-bolder'>Cookie de Amendoim</h5>
 
                                                     <!--Avaliação do Produto
                                                     <div class='d-flex justify-content-center small text-warning mb-2'>
@@ -221,54 +249,19 @@
 
                                                     <!--Preço do Produto-->
                                                     <!--usado pra traçar para desconto<span class='text-muted text-decoration-line-through'>$20.00</span>-->
-                                                    R$10,00
+                                                    R$9,00
                                                 </div>
                                             </div>
                                             <!--Ação do Produto-->
                                             <div class='card-footer p-4 pt-0 border-top-0 bg-transparent'>
-                                                <div class='text-center'><a class='btn btn-outline-dark mt-auto' href='#'>Ver mais</a></div>
+                                                <div class='text-center'><a class='btn btn-outline-dark mt-auto' href='produto.php?idProduto=15'>Ver mais</a></div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class='col mb-5'>
                                         <div class='card h-100'>
-                                            <!--Opção pra colocar uma tag de oferta, acabei nao usando mas achei interessante, aí queria deixar aqui caso necessario
-                                            <div class='badge bg-dark text-white position-absolute' style='top: 0.5rem; right: 0.5rem'>Oferta   </div>-->
-                                        <!--Imagem do Produto-->
-                                            <!--Imagem do Produto-->
-                                            <img class='card-img-top' src='img/bchocolate.jpg' alt='...' />
-                                            <!--Detalhe do Produto-->
-                                            <div class='card-body p-4'>
-                                                <div class='text-center'>
-                                                    <!--Nome do Produto-->
-                                                    <h5 class='fw-bolder'>Brownie de Chocolate</h5>
-
-                                                    <!--Avaliação do Produto
-                                                    <div class='d-flex justify-content-center small text-warning mb-2'>
-                                                        <div class='bi-star-fill'></div>
-                                                        <div class='bi-star-fill'></div>
-                                                        <div class='bi-star-fill'></div>
-                                                        <div class='bi-star-fill'></div>
-                                                        <div class='bi-star-fill'></div>
-                                                    </div>-->
-
-                                                    <!--Preço do Produto-->
-                                                    <!--usado pra traçar para desconto<span class='text-muted text-decoration-line-through'>$20.00</span>-->
-                                                    R$10,00
-                                                </div>
-                                            </div>
-                                            <!--Ação do Produto-->
-                                            <div class='card-footer p-4 pt-0 border-top-0 bg-transparent'>
-                                                <div class='text-center'><a class='btn btn-outline-dark mt-auto' href='#'>Ver mais</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class='col mb-5'>
-                                        <div class='card h-100'>
-                                            <!--Opção pra colocar uma tag de oferta, acabei nao usando mas achei interessante, aí queria deixar aqui caso necessario
-                                            <div class='badge bg-dark text-white position-absolute' style='top: 0.5rem; right: 0.5rem'>Oferta   </div>-->
+                                            <div class='badge bg-dark text-white position-absolute' style='top: 0.5rem; right: 0.5rem'>Novidade   </div>
                                         <!--Imagem do Produto-->
                                             <!--Imagem do Produto-->
                                             <img class='card-img-top' src='img/bnutella.jpg' alt='...' />
@@ -289,12 +282,12 @@
 
                                                     <!--Preço do Produto-->
                                                     <!--usado pra traçar para desconto<span class='text-muted text-decoration-line-through'>$20.00</span>-->
-                                                    R$14,00
+                                                    R$16,00
                                                 </div>
                                             </div>
                                             <!--Ação do Produto-->
                                             <div class='card-footer p-4 pt-0 border-top-0 bg-transparent'>
-                                                <div class='text-center'><a class='btn btn-outline-dark mt-auto' href='#'>Ver mais</a></div>
+                                                <div class='text-center'><a class='btn btn-outline-dark mt-auto' href='produto.php?idProduto=16'>Ver mais</a></div>
                                             </div>
                                         </div>
                                     </div>

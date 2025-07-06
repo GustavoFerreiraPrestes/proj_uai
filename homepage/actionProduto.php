@@ -176,7 +176,7 @@
 </div>
 
     <!-- Footer--> 
-       <div style=" position: fixed;  bottom: 0; left: 0; width: 100%;" class= "py-5 bg-dark">
+       <div style=" position: fixed;  bottom: 0; left: 0; width: 100%;" class= "py-1">
             <footer class="bg-light text-center py-3 mt-auto">
             <p class="mb-0">
 
@@ -188,6 +188,11 @@
             <!-- INSTAGRAM -->
             <a href="https://instagram.com/cookiesuai" target="_blank" class="text-danger text-decoration-none">
               <i class="bi bi-instagram"></i> Instagram
+            </a>
+
+            <!-- EMAIL -->
+            <a href="cookiesuai@gmail.com" class="text-dark text-decoration-none px-3">
+              <i class="bi bi-envelope-fill"></i> E-mail
             </a>
 
             </p>

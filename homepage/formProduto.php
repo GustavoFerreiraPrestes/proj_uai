@@ -1,10 +1,10 @@
 <?php include "header.php" ?>
 <?php include "validarSessao.php" ?> <!-- Assegura que esta página poderá ser acessada apenas por um usuário administrador -->
 
-<div class="container text-center mb-3 mt-3">
+<div class="container text-center mb-1 mt-6">
     
     <h2>Cadastrar Produto:</h2>
-    <div class="d-flex justify-content-center mb-3">
+    <div class="d-flex justify-content-center mb-3 ">
         <div class="row">
             <div class="col-12">
                 <form action="actionProduto.php" method="POST" class="was-validated" enctype="multipart/form-data">
@@ -39,7 +39,7 @@
                         <div class="invalid-feedback"></div>
                     </div>
 
-                    <button type="submit" class="btn btn-success">Cadastrar Produto</button>
+                    <button type="submit" class="btn btn-outline-cookie">Cadastrar Produto</button>
                 </form>
             </div>
         </div>
@@ -49,7 +49,7 @@
 </div>
 
     <!-- Footer--> 
-       <div style=" position: fixed;  bottom: 0; left: 0; width: 100%;" class= "py-5 bg-dark">
+       <div style=" position: fixed;  bottom: 0; left: 0; width: 100%;" class= "py-1">
             <footer class="bg-light text-center py-3 mt-auto">
             <p class="mb-0">
 
@@ -61,6 +61,11 @@
             <!-- INSTAGRAM -->
             <a href="https://instagram.com/cookiesuai" target="_blank" class="text-danger text-decoration-none">
               <i class="bi bi-instagram"></i> Instagram
+            </a>
+
+            <!-- EMAIL -->
+            <a href="cookiesuai@gmail.com" class="text-dark text-decoration-none px-3">
+              <i class="bi bi-envelope-fill"></i> E-mail
             </a>
 
             </p>

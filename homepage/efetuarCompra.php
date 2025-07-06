@@ -19,10 +19,11 @@
                 $dataCompra  = date('Y-m-d'); //Captura a data atual
                 $horaCompra  = date('H:i:s'); //Captura a hora atual
                 $quantidade  = $_POST['quantidade'];
+                $estoque     = $_POST['estoque'];
 
                 //Query para inserir a compra na tabela Compras
-                $efetuarCompra = "INSERT INTO Compras (idUsuario, idProduto, dataCompra, horaCompra, valorCompra, quantidade) VALUES($idUsuario, $idProduto, '$dataCompra', '$horaCompra', $valorCompra, $quantidade)";
-                $atualizarStatusProduto = "UPDATE Produtos SET estoque = $estoque - $quantidade WHERE idProduto = $idProduto";
+                $efetuarCompra = "INSERT INTO Compras (idUsuario, idProduto, dataCompra, horaCompra, valorCompra, quantidade) VALUES('$idUsuario', '$idProduto', '$dataCompra', '$horaCompra', '$valorCompra', '$quantidade')";
+                $atualizarStatusProduto = "UPDATE Produtos SET estoque = estoque - $quantidade WHERE idProduto = '$idProduto'";
 
                 //Incluir o arquivo de conexão com o banco de dados
                 include("conexaoBD.php");
@@ -80,6 +81,11 @@
             <!-- INSTAGRAM -->
             <a href="https://instagram.com/cookiesuai" target="_blank" class="text-danger text-decoration-none">
               <i class="bi bi-instagram"></i> Instagram
+            </a>
+
+            <!-- EMAIL -->
+            <a href="cookiesuai@gmail.com" class="text-dark text-decoration-none px-3">
+              <i class="bi bi-envelope-fill"></i> E-mail
             </a>
 
             </p>

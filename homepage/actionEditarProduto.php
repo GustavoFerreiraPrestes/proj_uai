@@ -6,9 +6,13 @@
 
     //Verifica o método de requisição do servidor
     if($_SERVER["REQUEST_METHOD"] == "POST"){
-        //Bloco para declaração de variáveis
-        $fotoProduto = $nomeProduto = $descricadoProduto = $valorProduto = $estoque = "";
-        $erroPreenchimento = false;
+	// Recupera o ID do produto
+	if (isset($_POST["idProduto"])) {
+		$idProduto = $_POST["idProduto"];
+	} else {
+		echo "<div class='alert alert-danger text-center'>Erro: ID do produto não foi recebido!</div>";
+		exit;
+	}
 
         //Validação do campo nomeProduto
         //Utiliza a função empty para verificar se o campo está vazio
@@ -68,12 +72,13 @@
 
         //Início da validação do campo FOTO
         $diretorio    = "img/"; //Define para qual diretório do sistema as imagens serão movidas
-        $fotoProduto  = $diretorio . basename($_FILES["fotoProduto"]["name"]); //img/nomeDaFoto
         $erroUpload   = false; //Variável para verificar erros no upload
-        $tipoDaImagem = strtolower(pathinfo($fotoProduto, PATHINFO_EXTENSION));//Converter para minúsculo e adquirir a extensão do arquivo
 
         //Verificar se tamanho do arquivo é maior do que zero
-        if ($_FILES['fotoProduto']['size'] != 0){
+        if (isset($_FILES["fotoProduto"]) && $_FILES["fotoProduto"]["size"] > 0) {
+
+        $fotoProduto = $diretorio . basename($_FILES["fotoProduto"]["name"]);
+		$tipoDaImagem = strtolower(pathinfo($fotoProduto, PATHINFO_EXTENSION));
 
             //Verificar se o tamanho do arquivo é maior do que 5MB (Em bytes)
             if($_FILES['fotoProduto']['size'] > 5000000){
@@ -107,23 +112,29 @@
                 $erroUpload = true;
                 }
             }
+        }   else {
+	// Se não foi enviada nova imagem, mantém a anterior
+	$fotoProduto = $_POST["fotoAtual"];
+}
 
-        }
+    }
 
         //Se não houver erro de preenchimento ou erro de upload
         if(!$erroPreenchimento && !$erroUpload){
 
             //Criar uma QUERY responsável por realizar a inserção dos dados no BD
-            $inserirProduto= "UPDATE Produtos SET fotoProduto = $fotoProduto, nomeProduto = $nomeProduto, descricaoProduto = $descricaoProduto, valorProduto = $valorProduto, estoque = $estoque
-                              WHERE idProduto = $idProduto";
+            $inserirProduto= "UPDATE Produtos SET fotoProduto = '$fotoProduto', nomeProduto = '$nomeProduto', descricaoProduto = '$descricaoProduto', valorProduto = '$valorProduto', estoque = '$estoque'
+                              WHERE idProduto = '$idProduto'";
 
             //Inclui o arquivo de conexão com o BD
             include "conexaoBD.php";
-
+            if (!$conn) {
+	        die("Erro na conexão: " . mysqli_connect_error());
+            }
             //Se a query for executada com sucesso, exibe mensagem e tabela
             if(mysqli_query($conn, $inserirProduto)){
 
-                echo "<div class='alert alert-success text-center'>Produto(a) cadastrado(a) com sucesso!</div>";
+                echo "<div class='alert alert-success text-center'>Produto alterado com sucesso!</div>";
                 
                 echo "<div class='container mt-3'>
                         <div class='mt-3 text-center'>
@@ -161,7 +172,7 @@
                         </div>";
             }
         }
-    }
+
     else{
         //Redireciona para a página formUsuario.php
         header("location:formProduto.php");
@@ -180,7 +191,7 @@
 </div>
 
     <!-- Footer--> 
-       <div style=" position: fixed;  bottom: 0; left: 0; width: 100%;" class= "py-5 bg-dark">
+       <div style=" position: fixed;  bottom: 0; left: 0; width: 100%;" class= "py-1">
             <footer class="bg-light text-center py-3 mt-auto">
             <p class="mb-0">
 
@@ -192,6 +203,11 @@
             <!-- INSTAGRAM -->
             <a href="https://instagram.com/cookiesuai" target="_blank" class="text-danger text-decoration-none">
               <i class="bi bi-instagram"></i> Instagram
+            </a>
+
+            <!-- EMAIL -->
+            <a href="cookiesuai@gmail.com" class="text-dark text-decoration-none px-3">
+              <i class="bi bi-envelope-fill"></i> E-mail
             </a>
 
             </p>

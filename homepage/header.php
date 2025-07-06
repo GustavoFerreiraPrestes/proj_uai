@@ -69,8 +69,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <li class="nav-item"><a class="nav-link active text-light" aria-current="page" href="index.php">Início</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Loja</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="listarProdutosTABELA.php" role="button" aria-expanded="false">Todos os Produtos</a>
                         
                             <?php
                             if(isset($_SESSION['logado']) && $_SESSION['logado'] === true){ //Verifica se há sessão ativa
@@ -83,17 +83,11 @@
                             else{
                                  echo "
                                     <li class='nav-item'>
-                                        <a class='nav-link' href='formLogin.php?pagina=formLogin'>Login</a>
+                                        <a class='nav-link text-light' href='formLogin.php?pagina=formLogin'>Login</a>
                                     </li>
                                 ";
                             }
                             ?>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">Todos Produtos</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Itens Populares</a></li>
-                                <li><a class="dropdown-item" href="#!">Novidade</a></li>
-                            </ul>
                         </li>
                     </ul>
                 </div>

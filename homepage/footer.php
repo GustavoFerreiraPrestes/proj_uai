@@ -13,6 +13,11 @@
               <i class="bi bi-instagram"></i> Instagram
             </a>
 
+                <!-- EMAIL -->
+            <a href="mailto:contato@cookiesuai.com" class="text-dark text-decoration-none px-3">
+              <i class="bi bi-envelope-fill"></i> E-mail
+            </a>
+
             </p>
             </footer>
         </div>
